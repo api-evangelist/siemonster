@@ -1,7 +1,24 @@
 aid: siemonster
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/siemonster.png
 name: SIEMonster
-description: SIEMonster is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: SIEMonster is a Security Information and Event Management (SIEM) vendor whose
+  flagship SIEMonster V5 platform ingests, correlates, and alerts on 2M+ security events
+  per second for threat detection and response, deployed via AWS Marketplace or as a
+  managed SaaS. Its EDG3 product is an autonomous AI SOC built on an edge-resident
+  security lakehouse. Documentation covers platform deployment and agent installation,
+  a knowledgebase, and FAQs; SIEMonster does not publish a public developer REST API,
+  SDKs, or API reference at this time.
 url: https://raw.githubusercontent.com/api-evangelist/siemonster/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Security
+- SIEM
+- Cybersecurity
+- Threat Detection
+- Security Monitoring
+- SOC
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/siemonster-domain-security.yml
 - type: Website
   url: https://siemonster.com/
+- type: Documentation
+  url: https://docs.siemonster.com/current/
+- type: Support
+  url: https://siemonster.com/contact/
+- type: TermsOfService
+  url: https://siemonster.com/legals/
+- type: PrivacyPolicy
+  url: https://siemonster.com/legals/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
